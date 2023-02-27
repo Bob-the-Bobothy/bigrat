@@ -1,12 +1,11 @@
 <?php
 //start the session
 session_start();
-
 //connect to database`
 $host = "mysql.apexhosting.gdn	";
 $sqlusername = "apexMC1154731";
 $sqlpassword = getenv('SQL_PASSWORD');
-console.log($password);
+echo $sqlpassword
 $dbname = "apexMC1154731";
 $conn = mysqli_connect($host, $sqlusername, $sqlpassword, $dbname);
 
