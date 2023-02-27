@@ -2,10 +2,9 @@
 //start the session
 session_start();
 //connect to database`
-$host = "mysql.apexhosting.gdn	";
+$host = "mysql.apexhosting.gdn";
 $sqlusername = "apexMC1154731";
-$sqlpassword = getenv('SQL_PASSWORD');
-echo $sqlpassword
+$sqlpassword = getenv("SQL_PASSWORD");
 $dbname = "apexMC1154731";
 $conn = mysqli_connect($host, $sqlusername, $sqlpassword, $dbname);
 
@@ -28,5 +27,5 @@ if (mysqli_num_rows($result) == 1) {
 }
 
 //close the database connection
-//mysqli_close($conn);
+mysqli_close($conn);
 ?>
