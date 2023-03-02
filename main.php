@@ -1,4 +1,12 @@
-<!DOCTYPE HTML>
+<?php
+  session_start();
+  if($_SESSION['loggedin'] !== true) {
+    header('Location: index.html');
+    exit('Error: You are not logged in, redirecting to login page.');
+  }
+  // The rest of your PHP code goes here...
+?>
+
 <head>
   <title>rats.</title>
   <link rel="stylesheet" type="text/css" href="style.css">

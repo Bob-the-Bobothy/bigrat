@@ -14,7 +14,7 @@ $(document).ready(function() {
       success: function(response) {
         if (response == "success") {
           //redirect to the dashboard page
-          window.location.href = "main.php";
+          window.location.href = "https://ratcult.repl.co/main.php";
         } else {
           //display error message
           $("#errorMessage").html("Invalid username or password.");
