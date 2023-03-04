@@ -16,5 +16,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <script src="https://ratcult.repl.co/js/app.js"></script>
 </head>
 <body>
+  <h1>Welcome to the Rat Cult website.</h1>
+  <p class=small
   <div id="images"></div>
 </body>

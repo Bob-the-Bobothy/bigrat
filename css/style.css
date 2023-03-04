@@ -98,3 +98,6 @@ input[type="submit"].light-mode:hover {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+p.small {
+  font-size: 10px;
+}
