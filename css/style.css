@@ -19,13 +19,13 @@
   :root {
     --background-color: #232323; /* Dark mode background color */
     --text-color: #ebebeb; /* Dark mode text color */
-    --button-background-color: #0042aa; /* Dark mode button background color */
+    --button-background-color: #002766; /* Dark mode button background color */
     --button-text-color: #ebebeb; /* Dark mode button text color */
-    --button-background-color-hover: #002e7a; /* Dark mode button background color on hover */
+    --button-background-color-hover: #001d4d; /* Dark mode button background color on hover */
     --button-text-color-hover: #ebebeb; /* Dark mode button text color on hover */
-    --form-submit-background-color: #0042aa; /* Dark mode form submit background color */
+    --form-submit-background-color: #002766; /* Dark mode form submit background color */
     --form-submit-text-color: #ebebeb; /* Dark mode form submit text color */
-    --form-submit-background-color-hover: #002e7a; /* Dark mode form submit background color on hover */
+    --form-submit-background-color-hover: #001d4d; /* Dark mode form submit background color on hover */
     --form-submit-text-color-hover: #ebebeb; /* Dark mode form submit text color on hover */
   }
 }

@@ -1,0 +1,104 @@
+/* Import the Roboto font from the Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+input {
+  background-color: #3b3b3b
+}
+
+/* ChatGPT went nuts*/
+:root {
+  --background-color: #FFFFFF; /* Light mode background color */
+  --text-color: #000000; /* Light mode text color */
+  --button-background-color: #007bff; /* Light mode button background color */
+  --button-text-color: #ffffff; /* Light mode button text color */
+  --button-background-color-hover: #0069d9; /* Light mode button background color on hover */
+  --button-text-color-hover: #ffffff; /* Light mode button text color on hover */
+  --form-submit-background-color: #007bff; /* Light mode form submit background color */
+  --form-submit-text-color: #ffffff; /* Light mode form submit text color */
+  --form-submit-background-color-hover: #0069d9; /* Light mode form submit background color on hover */
+  --form-submit-text-color-hover: #ffffff; /* Light mode form submit text color on hover */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #232323; /* Dark mode background color */
+    --text-color: #ebebeb; /* Dark mode text color */
+    --button-background-color: #002766; /* Dark mode button background color */
+    --button-text-color: #ebebeb; /* Dark mode button text color */
+    --button-background-color-hover: #001d4d; /* Dark mode button background color on hover */
+    --button-text-color-hover: #ebebeb; /* Dark mode button text color on hover */
+    --form-submit-background-color: #002766; /* Dark mode form submit background color */
+    --form-submit-text-color: #ebebeb; /* Dark mode form submit text color */
+    --form-submit-background-color-hover: #001d4d; /* Dark mode form submit background color on hover */
+    --form-submit-text-color-hover: #ebebeb; /* Dark mode form submit text color on hover */
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--button-background-color-hover);
+  color: var(--button-text-color-hover);
+}
+
+button:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  /* Change font-size and padding if needed */
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/* Style for form submit button in light mode */
+input[type="submit"].light-mode {
+  background-color: var(--form-submit-background-color);
+  color: var(--form-submit-text-color);
+}
+
+input[type="submit"].light-mode:hover {
+  background-color: var(--form-submit-background-color-hover);
+  color: var(--form-submit-text-color-hover);
+}
+
+/* Style for form submit button in dark mode */
+@media (prefers-color-scheme: dark) {
+  input[type="submit"].dark-mode {
+    background-color: var(--form-submit-background-color);
+    color: var(--form-submit-text-color);
+  }
+
+  input[type="submit"].dark-mode:hover {
+    background-color: var(--form-submit-background-color-hover);
+    color: var(--form-submit-text-color-hover);
+  }
+}
+
+/* Apply the Roboto font to all types of text */
+
+* {
+  font-family: Roboto, sans-serif
+}
+
+* {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
