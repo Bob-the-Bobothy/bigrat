@@ -6,7 +6,7 @@ $(document).ready(function() {
     var password = $("#password").val();
     $.ajax({
       type: "POST",
-      url: "login.php",
+      url: "https://ratcult.repl.co/php/login.php",
       data: {
         username: username,
         password: password
