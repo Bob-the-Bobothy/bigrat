@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-  header('Location: index.html');
+  header('Location: index.php');
   exit('Error: You are not logged in, redirecting to login page.');
 }
 
