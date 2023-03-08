@@ -25,12 +25,15 @@ $(document).ready(function() {
 });
 
 function updateChat() {
-	$.ajax({
-		type: "GET",
-		url: "https://ratcult.repl.co/php/send_receive_messages.php",
-		success: function(data) {
-			$("#chatbox").html(data);
-		}
-	});
+    // Make a GET request to the server
+    $.ajax({
+        type: "GET",
+        url: "https://ratcult.repl.co/php/send_receive_messages.php",
+        success: function(data) {
+            // Add the new messages to the chatbox
+            $("#chatbox").html(data);
+            // Scroll the chatbox to the bottom to show the latest messages
+            $("#chatbox-container").scrollTop($("#chatbox")[0].scrollHeight);
+        }
+    });
 }
-console.clear();

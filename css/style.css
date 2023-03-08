@@ -134,3 +134,11 @@ body {
 .timestamp {
   font-size: 60%;
 }
+#chatbox-container {
+    height: 300px;
+    overflow: auto;
+}
+
+#chatbox {
+    padding: 10px;
+}

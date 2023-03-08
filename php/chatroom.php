@@ -20,7 +20,9 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 </head>
 <body>
   <h2>Chatroom</h2>
+  <div id="chatbox-container">
 	<div id="chatbox"></div>
+  </div>
   <br>
 	<form>
 		<input type="text" name="message" id="message" placeholder="Enter your message" class="normalbutton">
