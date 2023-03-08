@@ -123,4 +123,14 @@ body {
 }
 .normalbutton {
   padding: 4px 10px;
+  font-szie: 12px;
+}
+.chatroom {
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 4px;
+}
+.timestamp {
+  font-size: 60%;
 }

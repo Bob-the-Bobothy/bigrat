@@ -5,7 +5,7 @@ $(document).ready(function() {
 	// Poll server for new messages every 2 seconds
 	setInterval(function() {
 		updateChat();
-	}, 2000);
+	}, 100);
 
 	// Send message when "Send" button is clicked
 	$("#send").click(function() {

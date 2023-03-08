@@ -17,7 +17,10 @@ $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 foreach ($rows as $row) {
     $username = $row['username'];
     $message = $row['message'];
-    $timestamp = date('H:i:s', strtotime($row['timestamp']));
-    echo "<span>$username:</span> $message <span>($timestamp)</span><br>";
+    $timestamp = new DateTime($row['timestamp']);
+    $timestamp->setTimezone(new DateTimeZone('UTC'));
+    $timestamp->modify('+0 hours');
+    $formatted_timestamp = $timestamp->format('m-d-Y');
+    echo "<span class='timestamp'>(".$timestamp->format('F j, Y h:i:s A').")</span><br><span>$username:</span> <span>$message</span><br>";
 }
 ?>
