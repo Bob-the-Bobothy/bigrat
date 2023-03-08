@@ -98,3 +98,26 @@ input[type="submit"].light-mode:hover {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+a {
+  color: #80aaff;
+}
+
+body {
+  margin: 40px 50px;
+}
+
+.small {
+  font-size: 80%;
+}
+.reference {
+  padding: 10px;
+  font-size: 90%;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+}
+.images {
+  padding: 0px;
+  border-radius: 8px;
+  background-color: var(--background-color);
+}

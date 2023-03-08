@@ -1,5 +1,6 @@
 { pkgs }: {
 	deps = [
-		pkgs.php82
+		pkgs.nodejs-16_x
+  pkgs.php82
 	];
 }

@@ -15,7 +15,7 @@ if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
 	<title>Login Page</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://ratcult.repl.co/js/login.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://ratcult.repl.co/css/login.css">
+  <link rel="stylesheet" type="text/css" href="https://ratcult.repl.co/css/style.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://ratcult.repl.co/js/app.js"></script>
 </head>
@@ -41,7 +41,7 @@ if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
       </form>
       <br>
       <div id="errorMessage"></div>
-      <div id="images"></div>
+      <div class="images" id="images"></div>
     </div>
   </div>
   </section>
