@@ -121,3 +121,6 @@ body {
   border-radius: 8px;
   background-color: var(--background-color);
 }
+.normalbutton {
+  padding: 4px 10px;
+}
