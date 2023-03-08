@@ -25,6 +25,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <span class=reference>
     <b class="reference">Internal:</b>
     <a class="reference" href="members.php">Member List</a>
+    <a class="reference" href="chatroom.php">Chatroom</a>
     <a class="reference" href="bible.php">Bible (from Google Doc)</a>
     <b class="reference">External:</b>
     <a class="reference" href="https://docs.google.com/document/d/1_GVHxKXUqkPKM8GyKK4CMuMZXkkHNF-TRpUocb_GAqA/edit">The Raticate (Main Google Doc)</a>
@@ -34,6 +35,5 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   </span>  
   <br><br>
   <!-- this goes at the bottom -->
-  <br>
   <div class="images" id="images"></div>
 </body>
