@@ -8,6 +8,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 
 // The rest of your PHP code goes here...
 ?>
+<!DOCTYPE HTML>
+<html>
 <head>
   <title>rats.</title>
   <link rel="stylesheet" type="text/css" href="https://ratcult.repl.co/css/style.css">
@@ -24,3 +26,4 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <br><br>
   <div class="images" id="images"></div>
 </body>
+</html>
