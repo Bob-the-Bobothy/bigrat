@@ -41,7 +41,7 @@ if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
       </form>
       <br>
       <div id="errorMessage"></div>
-      <div id="images"></div>
+      <div class="images" id="images"></div>
     </div>
   </div>
   </section>
