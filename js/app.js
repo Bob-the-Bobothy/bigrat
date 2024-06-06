@@ -13,7 +13,7 @@ $(document).ready(function() {
             var results = data.photos;
             var randomResults = shuffleArray(results); // shuffle the results array
             var randomIndex = Math.floor(Math.random() * perPage);
-            var html = "<img src='" + randomResults[randomIndex].src.medium + "'>";
+            var html = "<img src='" + randomResults[randomIndex].src.medium + "' style='border-radius: 8px'>";
             $("#images").html(html);
         },
         error: function(xhr, status, error) {

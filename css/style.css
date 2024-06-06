@@ -1,10 +1,6 @@
 /* Import the Roboto font from the Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
-input {
-  background-color: #3b3b3b
-}
-
 /* ChatGPT went nuts*/
 :root {
   --background-color: #FFFFFF; /* Light mode background color */
@@ -101,4 +97,48 @@ input[type="submit"].light-mode:hover {
 * {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+a {
+  color: #80aaff;
+}
+
+body {
+  margin: 40px 50px;
+}
+
+.small {
+  font-size: 80%;
+}
+.reference {
+  padding: 10px;
+  font-size: 90%;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+}
+.images {
+  padding: 0px;
+  border-radius: 8px;
+  background-color: var(--background-color);
+}
+.normalbutton {
+  padding: 4px 10px;
+  font-szie: 12px;
+}
+.chatroom {
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 4px;
+}
+.timestamp {
+  font-size: 60%;
+}
+#chatbox-container {
+    height: 300px;
+    overflow: auto;
+}
+
+#chatbox {
+    padding: 10px;
 }
