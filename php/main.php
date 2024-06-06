@@ -12,11 +12,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <html>
 <head>
   <title>rats.</title>
-  <link rel="stylesheet" type="text/css" href="https://ratcult.repl.co/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://ratcult.repl.co/js/big_app.js"></script>
-  <script src="https://ratcult.repl.co/js/app.js"></script>
-  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="/js/big_app.js"></script>
+  <script src="/js/app.js"></script>
 </head>
 <body>
   <h2>Hello <?php echo $_SESSION['username'] ?>, welcome to the Rat Cult website.</h2>

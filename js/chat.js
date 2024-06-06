@@ -9,11 +9,28 @@ $(document).ready(function() {
 
 	// Send message when "Send" button is clicked
 	$("#send").click(function() {
+		event.preventDefault();
 		var message = $("#message").val();
 		if(message != "") {
 			$.ajax({
 				type: "POST",
-				url: "https://ratcult.repl.co/php/send_receive_messages.php",
+				url: "/php/send_receive_messages.php",
+				data: { message: message },
+				success: function() {
+					$("#message").val("");
+					updateChat();
+				}
+			});
+		}
+	});
+
+	$("#send2").submit(function() {
+		event.preventDefault();
+		var message = $("#message").val();
+		if(message != "") {
+			$.ajax({
+				type: "POST",
+				url: "/php/send_receive_messages.php",
 				data: { message: message },
 				success: function() {
 					$("#message").val("");
@@ -28,7 +45,7 @@ function updateChat() {
     // Make a GET request to the server
     $.ajax({
         type: "GET",
-        url: "https://ratcult.repl.co/php/send_receive_messages.php",
+        url: "/php/send_receive_messages.php",
         success: function(data) {
             // Add the new messages to the chatbox
             $("#chatbox").html(data);

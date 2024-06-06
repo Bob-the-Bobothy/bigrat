@@ -6,7 +6,7 @@ $(document).ready(function() {
     var password = $("#password").val();
     $.ajax({
       type: "POST",
-      url: "https://ratcult.repl.co/php/login.php",
+      url: "/php/login.php",
       data: {
         username: username,
         password: password
@@ -14,7 +14,7 @@ $(document).ready(function() {
       success: function(response) {
         if (response == "success") {
           //redirect to the dashboard page
-          window.location.href = "https://ratcult.repl.co/php/main.php";
+          window.location.href = "/php/main.php";
         } else {
           //display error message
           $("#errorMessage").html("Invalid username or password.");

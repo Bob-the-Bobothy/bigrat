@@ -3,7 +3,7 @@
 session_start();
 
 if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
-  header('Location: https://ratcult.repl.co/php/main.php');
+  header('Location: /php/main.php');
   exit('You are already logged in, redirecting to main page.');
 }
 
@@ -14,10 +14,10 @@ if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
 <head>
 	<title>Login Page</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://ratcult.repl.co/js/login.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://ratcult.repl.co/css/style.css">
+  <script src="/js/login.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://ratcult.repl.co/js/app.js"></script>
+	<script src="/js/app.js"></script>
 </head>
 <body>
 	<section>
